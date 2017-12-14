@@ -20,7 +20,7 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'wordpress');
+define('DB_NAME', 'Wordpress');
 
 /** MySQL database username */
 define('DB_USER', 'wpuser');
@@ -86,5 +86,5 @@ if ( !defined('ABSPATH') )
 
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');
-define('FS_METHOD', 'direct');
-define('WP_SITEURL', 'http://192.168.1.175:4897/wordpress'); define('WP_HOME', WP_SITEURL);
+/**define('FS_METHOD', 'direct'); */
+/**define('WP_SITEURL', 'http://192.168.1.175:4897/wordpress'); define('WP_HOME', WP_SITEURL); */
