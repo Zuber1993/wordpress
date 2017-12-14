@@ -23,10 +23,10 @@
 define('DB_NAME', 'Wordpress');
 
 /** MySQL database username */
-define('DB_USER', 'wpuser');
+define('DB_USER', 'user1');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'root');
+define('DB_PASSWORD', 'juber');
 
 /** MySQL hostname */
 define('DB_HOST', '192.168.1.175');
