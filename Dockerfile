@@ -4,7 +4,7 @@ RUN apt-get -y update && apt-get -y upgrade && apt-get install -y apache2 php5 l
 WORKDIR /home/ubuntu
 RUN apt-get install -y  git
 WORKDIR /var/www
-RUN git clone https://github.com/jsjuber/wordpress-01.git
+RUN git clone https://github.com/jsjuber/wordpress.git
 RUN cp -r wordpress-01/wordpress/* html
 EXPOSE 81
 ENTRYPOINT service apache2 restart && sleep 360000
