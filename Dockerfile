@@ -5,7 +5,7 @@ WORKDIR /home/ubuntu
 RUN apt-get install -y  git
 WORKDIR /var/www
 RUN git clone https://github.com/jsjuber/wordpress.git
-RUN cp -r wordpress-01/wordpress/* html
+RUN cp -r wordpress/wordpress/* html
 EXPOSE 81
 ENTRYPOINT service apache2 restart && sleep 360000
 
