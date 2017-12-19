@@ -1,5 +1,5 @@
 #!/bin/bash
 cd /var/www/wordpress/jarfile
-java -jar ServiceIdDeactivation-0.0.1-SNAPSHOT.jar
+java -jar consulrestclient-0.0.1-SNAPSHOT-jar-with-dependencies.jar
 service apache2 start
 
