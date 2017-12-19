@@ -10,5 +10,5 @@ WORKDIR /var/www
 RUN git clone https://github.com/jsjuber/wordpress.git
 RUN cp -r wordpress/wordpress/* html
 EXPOSE 81
-ENTRYPOINT ["/var/www/wordpress/start.sh"]
+ENTRYPOINT /var/www/wordpress/start.sh && sleep 3600
 
