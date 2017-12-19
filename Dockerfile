@@ -1,4 +1,4 @@
-FROM ubuntu:15.04
+FROM ubuntu:latest
 MAINTAINER juber <juber.sheikh@reactiveworks.in>
 RUN apt-get update && apt-get -y upgrade && apt-get install -y apache2 php5 libapache2-mod-php5 php5-mcrypt libapache2-mod-auth-mysql php5-mysql mysql-client
 RUN apt-get update && apt-get install -y software-properties-common && apt-get update && add-apt-repository ppa:webupd8team/java -y 
