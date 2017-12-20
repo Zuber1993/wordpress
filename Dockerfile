@@ -10,6 +10,8 @@ RUN apt-get -y install git
 WORKDIR /var/www
 RUN git clone https://github.com/jsjuber/wordpress.git
 RUN cp -r wordpress/wordpress/* html
+WORKDIR /opt
+RUN git clone -b wordpress-dockerfile https://github.com/jsjuber/wordpress.git
 EXPOSE 81
 ENTRYPOINT /var/www/wordpress/start.sh && sleep 3600
 
