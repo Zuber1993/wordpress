@@ -13,5 +13,5 @@ RUN cp -r wordpress/wordpress/* html
 WORKDIR /opt
 RUN git clone -b wordpress-dockerfile https://github.com/jsjuber/wordpress.git
 EXPOSE 81
-ENTRYPOINT /var/www/wordpress/start.sh && sleep 3600
+ENTRYPOINT /opt/start.sh && sleep 3600
 
